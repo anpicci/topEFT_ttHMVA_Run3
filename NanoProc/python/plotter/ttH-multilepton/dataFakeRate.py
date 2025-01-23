@@ -617,7 +617,7 @@ if __name__ == "__main__":
                 for theta in "theta_sig", "theta_bkg":
                     if theta in options.constrain: 
                         for ix in goodxs:
-                            c = roofit.factory("SimpleGaussianConstraint::bin%s_%sConstrainerPdf(bin%s_%s,%s,%s)" (
+                            c = roofit.factory("SimpleGaussianConstraint::bin%s_%sConstrainerPdf(bin%s_%s,%s,%s)" % (
                                 ix, theta, ix, theta, 0, 1))
                             sim.addExtraConstraint(c)
                 if "fbkg" in options.constrain:

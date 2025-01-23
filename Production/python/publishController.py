@@ -127,7 +127,7 @@ class PublishController(object):
                                             datasetDetails["DirectorySizeInTB"])
 
         # Add tags to CMGDB
-        if datasetDetails['Tags'] is None or len(datasetDetails['Tags']) is 0:
+        if datasetDetails['Tags'] is None or len(datasetDetails['Tags']) == 0:
             print("No tags could be added to CMGDB as none were found")
             return datasetDetails['CMGDBID']
         tagIDs = []

@@ -67,7 +67,7 @@ def getUnknownParentWithCMGDB(name):
         
         name = removeUser(name)
         name = name.lstrip("/").split("/")
-        if len(name) is 3:
+        if len(name) == 3:
             
             proc = name[1].split("--")
             if len(proc)>2:
@@ -87,7 +87,7 @@ def getKnownParentWithCMGDB(name,user):
     try:
         name = removeUser(name)
         name = name.lstrip("/").split("/")
-        if len(name) is 3:
+        if len(name) == 3:
             proc = name[1].split("--")
             if len(proc)>2:
                 proc = proc[:-1]
