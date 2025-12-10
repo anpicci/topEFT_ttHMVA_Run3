@@ -36,7 +36,7 @@ git push -u origin heppy_80X
 #### Now get the CMGTools subsystem from the cmgtools-lite repository
 
 ```
-git clone https://github.com/jdelrieg/topEFT_ttHMVA_Run3.git -b newcmgtools_python3 CMGTools
+git clone https://github.com/anpicci/topEFT_ttHMVA_Run3.git -b nd_run3 CMGTools
 cd CMGTools
 ```
 
